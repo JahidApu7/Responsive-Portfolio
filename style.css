@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Primary-text {
+    color: orange;
+}
+
+.btn-primary {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    padding: 18px 35px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: orange;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.Header {
+    background-color: #FFF8F3;
+    background-image: url(images/header_bg.png), url(images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+}
+
+/* Header and navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.nav-tittle {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+/* Banner Styles */
+.banner {
+    margin: 0 200px;
+    align-items: center;
+    display: flex;
+}
+
+.banner-tittle {
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.banner-sub-tittle {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30PX;
+}
+
+/* Main Section */
+main {
+    max-width: 1140p\x;
+    margin: 0 auto;
+}
+
+/* About section styles */
+.About {
+    margin-top: 130px;
+    background-color: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+
+}
+
+.Section-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.About-Descrition {
+    color: #757575;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.About-info-ontainer {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.info-title {
+    font-size: 20px;
+    color: #757575;
+
+}
+
+.info-description {
+    font-size: 20px;
+    color: #474747;
+}
+
+/* What i do styles */
+.What-i-do {
+    margin-top: 130px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 130px;
+}
+
+.skill {
+    background: #ffffff;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.skill-tittle {
+    font-weight: 700;
+    font-size: 20PX;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skill-description {
+    color: #757575;
+}
+
+/* Resume styles */
+.Resume-Content {
+    display: flex;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.Resume-Title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.Resume-Item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Resume .title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.Resume .sub-title {
+    color: #757575;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.Resume .description {
+    color: #757575;
+}
+
+.resume-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Section Styles */
+.Contact {
+    display: flex;
+    gap: 100px;
+    background-color: #FFF8F3;
+    padding: 130px 200px;
+}
+
+.Contact .Section-title {
+    text-align: left;
+}
+
+.Contact a {
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.Contact input[type="text"],
+input[type="email"],
+textarea {
+    margin: 24px;
+    border: 0;
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.Contact-description {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+input {
+    height: 64px;
+}
+
+@media screen and (max-width:576px) {
+
+    nav,
+    .banner,
+    .skills-container,
+    .Resume-Content,
+    .About-info-ontainer,
+    .Contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+
+    .banner {
+        margin: 0 20px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    nav li {
+        margin-left: 0;
+    }
+
+    .nav-tittle {
+        padding-left: 22px;
+    }
+
+    .Header {
+        background-image: none;
+    }
+
+    .About,
+    .Contact {
+        padding: 20px;
+    }
+
+    .Contact input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 0 0 0 5px;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .About,
+    .Contact,
+    .banner {
+        padding: 20px;
+    }
+}
